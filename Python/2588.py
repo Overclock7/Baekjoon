@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/2588
+
 A = int(input())
 B = list(input())
 

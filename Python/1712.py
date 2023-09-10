@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/1712
+
 A,B,C = map(int,input().split())
 
 if B>=C:

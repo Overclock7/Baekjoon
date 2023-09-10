@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/5073
+
 while True:
     tri = list(map(int,input().split()))
 

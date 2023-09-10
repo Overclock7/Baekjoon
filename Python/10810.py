@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/10810
+
 N,M = map(int,input().split())
 
 list = []

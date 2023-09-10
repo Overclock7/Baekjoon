@@ -1,3 +1,4 @@
+# https://www.acmicpc.net/problem/2566
 
 l = [list(map(int,input().split())) for _ in range(9)]
 

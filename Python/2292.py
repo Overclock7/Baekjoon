@@ -1,3 +1,4 @@
+# https://www.acmicpc.net/problem/2292
 
 standard = 1
 num = int(input())

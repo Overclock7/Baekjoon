@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/2903
+
 # 초기값 지정
 N = int(input())
 init = 4

@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/1546
+
 import sys
 
 year = int(sys.stdin.readline())

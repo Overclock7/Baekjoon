@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/1157
+
 
 s = input().upper()
 l1 = list()

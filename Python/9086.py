@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/9086
+
 n = int(input())
 
 l = []

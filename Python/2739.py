@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/2739
+
 A =int(input())
 
 for i in range(1,10):

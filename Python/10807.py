@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/10807
+
 n = int(input())
 
 l = list(map(int,input().split()))

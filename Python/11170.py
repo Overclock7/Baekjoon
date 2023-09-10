@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/11170
+
 T = int(input())
 for i in range(T):
     N , M = map(int,input().split())

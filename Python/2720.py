@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/2720
+
 
 #테스트 횟수 입력
 T = int(input())

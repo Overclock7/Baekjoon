@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/9506
+
 while True:
     n = int(input())
     if n == -1:

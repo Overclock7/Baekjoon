@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/11005
+
 N , B = map(int,input().split())
 temp = list()
 num_list = list()

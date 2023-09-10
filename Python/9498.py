@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/9498
+
 score = int(input())
 
 if(score<60):

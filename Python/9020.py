@@ -1,3 +1,4 @@
+# https://www.acmicpc.net/problem/9020
 
 T = int(input())
 

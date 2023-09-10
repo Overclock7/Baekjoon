@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/2525
+
 A, B =map(int,input().split())
 C = int(input())
 

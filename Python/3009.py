@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/3009
+
 X = []
 Y = []
 

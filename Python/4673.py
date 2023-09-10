@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/4673
+
 def self_number():
     num_set = set(range(1, 10001))
     not_self_num = set()

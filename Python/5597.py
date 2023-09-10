@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/5597
+
 import sys
 
 n = 30

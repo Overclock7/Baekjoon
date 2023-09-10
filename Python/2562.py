@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/2562
+
 import sys
 
 n = 9

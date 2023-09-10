@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/5086
+
 while True:
     try: 
         A,B = map(int,input().split())

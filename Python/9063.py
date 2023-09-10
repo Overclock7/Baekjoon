@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/9063
+
 N = int(input())
 x_list = list()
 y_list = list()

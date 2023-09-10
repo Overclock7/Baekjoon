@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/10871
+
 import sys
 
 N,X = map(int,sys.stdin.readline().split())

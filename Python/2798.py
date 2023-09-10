@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/2798
+
 N, M = map(int,input().split())
 card = list(map(int,input().split()))
 result = 0

@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/10950
+
 n = int(input())
 a = list()
 b = list()

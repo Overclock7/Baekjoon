@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/2941
+
 s = input()
 minus = 0
 

@@ -1,3 +1,4 @@
+# https://www.acmicpc.net/problem/10813
 
 N,M = map(int,input().split())
 

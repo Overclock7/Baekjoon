@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/10951
+
 import sys
 
 while(True):

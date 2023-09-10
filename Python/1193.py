@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/1193
+
 
 line = 1
 n = int(input())

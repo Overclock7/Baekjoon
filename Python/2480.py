@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/2480
+
 A,B,C = map(int,input().split())
 
 money = 0

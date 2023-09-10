@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/10102
+
 V = int(input())
 Result = list(input())
 if Result.count('A') > Result.count('B'):

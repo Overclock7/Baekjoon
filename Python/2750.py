@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/2750
+
 N = int(input())
 n_list = list()
 

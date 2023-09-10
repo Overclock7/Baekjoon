@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/10101
+
 A = int(input())
 B = int(input())
 C = int(input())

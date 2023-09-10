@@ -1,3 +1,4 @@
+# https://www.acmicpc.net/problem/2563
 
 paper = [[0]*100 for i in range(100)]
 count = 0

@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/25304
+
 total = int(input())
 num = int(input())
 

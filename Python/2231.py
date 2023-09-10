@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/2231
+
 N = int(input())
 result = 0
 

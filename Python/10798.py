@@ -1,3 +1,4 @@
+# https://www.acmicpc.net/problem/10798
 
 l = [ input() for _ in range(5)]
 
