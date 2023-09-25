@@ -8,7 +8,7 @@ for i in range(N):
 
 # n_list.sort()
 
-# bubble sort
+# Bubble sort
 for j in range(N-1,0,-1):
     for k in range(j):
         if n_list[k] > n_list[k+1]:

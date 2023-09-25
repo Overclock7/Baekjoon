@@ -3,7 +3,6 @@
 n = int(input())
 count = n
 
-#1
 for i in range(n):
     s = input()
     for j in range(len(s)-1):
@@ -15,7 +14,7 @@ for i in range(n):
 
 print(count)
 
-#2 (baekjoon)
+# Baekjoon
 
 # s = 0
 

@@ -8,8 +8,9 @@ r2 = int(n2[::-1])
 
 print(max(r1,r2))
 
-#2(Baekjoon)
-r1 = int(''.join(reversed(n1)))
-r2 = int(''.join(reversed(n1)))
+# Baekjoon
 
-print(max(r1,r2))
+# r1 = int(''.join(reversed(n1)))
+# r2 = int(''.join(reversed(n1)))
+
+# print(max(r1,r2))
