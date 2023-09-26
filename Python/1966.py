@@ -19,5 +19,3 @@ for _ in range(T):
                 print_queue.pop(0) # dequeue
         else:
             print_queue.append(print_queue.pop(0)) # dequeue and enqueue
-
-# Beakjoon
