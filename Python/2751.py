@@ -8,7 +8,7 @@ nums.sort()
 for n in nums:
     print(n)
 
-# Overclock0708
+# 2 (Overclock0708)
 
 # def mergeSort(x):
 #     if len(x) > 1:

@@ -28,7 +28,7 @@ for _ in range(int(input())):
     elif command == 'back':
         print(-1 if front == rear else queue[rear-1])
 
-# Baekjoon
+# 2 (Baekjoon)
 
 # import sys
 # from collections import deque

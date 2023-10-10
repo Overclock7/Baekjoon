@@ -7,7 +7,7 @@ for x in range(-999,1000):
         if a*x+b*y == c and d*x+e*y == f:
             print(x,y)
 
-# Overclock0708 (Use Numpy)
+# 2 (Overclock0708) - Use Numpy
 
 # import numpy as np
 

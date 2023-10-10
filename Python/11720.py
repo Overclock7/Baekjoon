@@ -2,7 +2,6 @@
 
 n = int(input())
 
-# 1
 n_list = list(str(input()))
 
 sum = 0
@@ -12,7 +11,8 @@ for i in range(0,n):
 
 print(sum)
 
-# Baekjoon
+# 2 (Baekjoon)
 
+# n = int(input())
 # n_list = sum(map(int,input()))
 # print(n_list)

@@ -29,7 +29,7 @@ for i in range(N):
     else:
         print("NO")
 
-# Baekjoon
+# 2 (Baekjoon)
 
 # from sys import stdin
 

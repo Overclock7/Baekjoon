@@ -7,7 +7,7 @@ input = sys.stdin.readline
 # .sort()는 리스트에서만...
 print("".join(sorted(input().strip(),reverse=True)))
 
-#2 
+# 2 (Overclock0708)
 
 # num_list = list(input())
 
