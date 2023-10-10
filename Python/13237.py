@@ -1,32 +1,52 @@
 # https://www.acmicpc.net/problem/13237
 
-class Node:
-    def __init__(self,data = None,parent = None) :
-        self.data = data
-        self.parent = parent
-        self.height = None
-    def __str__(self):
-        return self.data.__str__()
+import sys
+input = sys.stdin.readline
+
+tree = dict()
 
 T = int(input())
 
-lst = []
-lst.append(Node())
+for data in range(1,T+1):
+    parent = int(input())
+    tree[data] = parent
 
-for i in range(1,T+1):
-    lst.append(Node(i,int(input())))
-
-for node in lst[1:] :
+for data,parent in tree.items():
     height = 0
-    if node.parent == -1:
-        node.height = height
-    else:
-        height = 1
-        loc = node.parent
-        while lst[loc].parent != -1:
-            height += 1
-            loc = lst[loc].parent
-        node.height = height
+    while parent != -1:
+        height += 1
+        parent = tree[parent]
+    print(height)
 
-for i in lst[1:]:
-    print(i.height)
+# 2 
+
+# class Node:
+#     def __init__(self,data = None,parent = None) :
+#         self.data = data
+#         self.parent = parent
+#         self.height = None
+#     def __str__(self):
+#         return self.data.__str__()
+
+# T = int(input())
+
+# lst = []
+# lst.append(Node())
+
+# for i in range(1,T+1):
+#     lst.append(Node(i,int(input())))
+
+# for node in lst[1:] :
+#     height = 0
+#     if node.parent == -1:
+#         node.height = height
+#     else:
+#         height = 1
+#         loc = node.parent
+#         while lst[loc].parent != -1:
+#             height += 1
+#             loc = lst[loc].parent
+#         node.height = height
+
+# for i in lst[1:]:
+#     print(i.height)
