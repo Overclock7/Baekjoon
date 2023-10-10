@@ -1,18 +1,25 @@
 # https://www.acmicpc.net/problem/15702
 
-N, M = map(int,input().split())
+import sys
+input = sys.stdin.readline
+
+N , M = map(int,input().split())
 
 score = list(map(int,input().split()))
-dic = dict()
+lst_result = list()
 
 for _ in range(M):
-    paper = list(input().split())
-    temp = 0
-    for i in range(N):
-        if paper[i+1] == 'O':
-            temp += score[i]
-    dic[int(paper[0])] = temp
+    lst = list(input().split())
+    idx = lst[0]
+    chk = lst[1:]
 
-sort_dic = sorted(dic.items(),key=lambda x:(-x[1],x[0]))
+    result = 0
+    for c,s in zip(chk,score): # zip 함수 활용
+        if c == 'O':
+            result += s
+    
+    lst_result.append((idx,result))
 
-print(sort_dic[0][0],sort_dic[0][1])
+lst_result.sort(key=lambda x:(-x[1],x[0]))
+
+print(lst_result[0][0],lst_result[0][1])
