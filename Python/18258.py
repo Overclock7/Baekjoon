@@ -1,37 +1,32 @@
 # https://www.acmicpc.net/problem/18258
 
 import sys
+input = sys.stdin.readline
 
-q = []
-index = 0
-
-for i in range(int(sys.stdin.readline())):
-    S = sys.stdin.readline().strip().split()
-    if S[0] == 'push':
-        q.append(int(S[1]))
-    elif S[0] == 'pop':
-        if len(q) - index > 0:
-            print(q[index])
-            index += 1
-        else:
+#Queue에서는 front,rear 선언해서 활용하자
+queue = list()
+front = 0
+rear = 0
+for _ in range(int(input())):
+    ipt = list(input().rstrip().split())
+    command = ipt[0]
+    if command == 'push':
+        queue.append(ipt[1])
+        rear += 1
+    elif command == 'pop':
+        if front == rear:
             print(-1)
-    elif S[0] == 'size':
-        print(len(q) - index)
-    elif S[0] == 'empty':
-        if len(q) - index > 0:
-            print(0)
         else:
-            print(1)
-    elif S[0] == 'front':
-        if len(q) - index > 0:
-            print(q[index])
-        else:
-            print(-1)
-    elif S[0] == 'back':
-        if len(q) - index > 0:
-            print(q[-1])
-        else:
-            print(-1)
+            print(queue[front])
+            front += 1
+    elif command == 'size':
+        print(rear-front)
+    elif command == 'empty':
+        print(1 if front == rear else 0)
+    elif command == 'front':
+        print(-1 if front == rear else queue[front])
+    elif command == 'back':
+        print(-1 if front == rear else queue[rear-1])
 
 # Baekjoon
 
