@@ -24,7 +24,25 @@ favorite.sort()
 
 print(favorite[0])
 
-# baekjoon
+# 2 (Overclock)
+
+# import sys
+# input = sys.stdin.readline
+
+# dic = dict()
+
+# for _ in range(int(input())):
+#     s = input().rstrip()
+#     if s not in dic.keys():
+#         dic[s] = 1
+#     else:
+#         dic[s] += 1
+
+# lst = sorted(dic.items(),key=lambda x:(-x[1],x[0]))
+
+# print(lst[0][0])
+
+# 3 (baekjoon)
 
 # N = int(input())
 # MP = {}
