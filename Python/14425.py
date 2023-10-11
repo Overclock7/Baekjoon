@@ -1,21 +1,17 @@
 # https://www.acmicpc.net/problem/14425
 
 import sys
+input = sys.stdin.readline
 
-N , M = map(int,sys.stdin.readline().split())
+N, M = map(int,input().strip().split())
 
-list_N = []
-list_M = []
-count = 0
+String = set()
+Check = list()
 
-for i in range(N):
-    list_N.append(sys.stdin.readline())
+for _ in range(N):
+    String.add(input().strip())
 
-for j in range(M):
-    list_M.append(sys.stdin.readline())
+for _ in range(M):
+    Check.append(input().strip())
 
-for n in list_M:
-    if n in list_N:
-        count += 1
-
-print(count)
+print(sum(1 for c in Check if c in String))
