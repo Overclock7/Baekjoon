@@ -1,5 +1,15 @@
-a = [[1,2],[3,4]]
-b = a[:]
-a[1].append(5)
-print('a: ',a)
-print('b: ',b)
+import numpy as np
+from math import *
+
+
+buff = (map(str,input().split(";")))
+a = []
+
+for b in buff:
+    temp = []
+    for k in b.split(",") :
+        temp.append(int(k))
+    a.append(temp)
+
+for c in a:
+    print(c)
