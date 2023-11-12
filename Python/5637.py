@@ -7,7 +7,7 @@ input = sys.stdin.readline
 
 words = list()
 while True:
-    words.extend(input().rstrip().split())
+    words.extend(input().rstrip().split()) # 한 줄의 모든 단어를 리스트에 추가
     if words[-1] == 'E-N-D':
         break
 
@@ -17,7 +17,7 @@ for i in words:
 
 print(sorted(result,key= lambda x: -len(x))[0])
 
-#2 (Baekjoon)
+# 2 (Baekjoon)
 
 # import sys
 # import re
@@ -31,7 +31,7 @@ print(sorted(result,key= lambda x: -len(x))[0])
 #             longest = word
 # print(longest.lower())
 
-#3 (Baekjoon)
+# 3 (Baekjoon)
 
 # import re
 # import sys

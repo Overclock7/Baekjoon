@@ -53,7 +53,7 @@ with open(0) as f:
     pattern = f.readline().rstrip()
 KMP(text,pattern,Border_KMP(pattern))
 
-#2 (Baekjoon)
+# 2 (Baekjoon)
 
 # def Border_KMP(pattern):
 #     len_pattern = len(pattern)

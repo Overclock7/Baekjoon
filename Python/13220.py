@@ -6,9 +6,8 @@ input = sys.stdin.readline
 def make_kmp_table(pattern, border):
     m = len(pattern)
     border[0] = -1
-    border[1] = 0
 
-    i = 2
+    i = 1
     cnd = 0
 
     while i < m :
@@ -17,7 +16,7 @@ def make_kmp_table(pattern, border):
             border[i] = cnd 
             i += 1
         elif cnd > 0:
-            cnd = border[cnd]
+            cnd = border[cnd] # 문자열이 다른데 cnd가 0이 아닐 경우 -> 다음 패턴의 끝으로 옮김
         else:
             border[i] = 0
             i += 1
@@ -37,7 +36,7 @@ def kmp_search(pattern, border, text):
             if border[i] > -1:
                 m = m + i - border[i] # Text index 는 (Error 난 곳) - (Border[i])
                 i = border[i] # Pattern index는 Border[i]
-            else:
+            else: # border[i] == 0 이면 한 칸 이동
                 i = 0
                 m += 1
 

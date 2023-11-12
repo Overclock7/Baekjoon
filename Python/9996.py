@@ -8,10 +8,10 @@ input = sys.stdin.readline
 T = int(input())
 r = input().rstrip().replace('*','[a-z]*')
 
-p = re.compile(r)
+p = re.compile('^'+r+'$')
 for _ in range(T):
     s = input().rstrip()
-    m = p.fullmatch(s)
+    m = p.match(s)
     if m:
         print('DA')
     else:
