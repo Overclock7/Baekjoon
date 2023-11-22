@@ -1,19 +1,25 @@
-# https://www.acmicpc.net/problem/2839
+# https://www.acmicpc.net/problem/14916
 
 import sys
 input = sys.stdin.readline
 
 N = int(input())
-dp = [5001] * (N+1) # 3 <= N <= 5000
-if N <= 4:
-    dp[3] = 1
-else:
-    dp[3] = 1
-    dp[5] = 1
-    for i in range(6,N+1):
-        dp[i] = min(dp[i-3],dp[i-5]) + 1
+coin = [100001] * (N+1)
 
-print(dp[N] if dp[N] < 5001 else -1)
+if N <= 5:
+    if N == 2 or N == 5:
+        coin[N] = 1
+    elif N == 4:
+        coin[N] = 2
+else:
+    #Initial Values
+    coin[2] = coin[5] = 1
+    coin[4] = 2
+    #Dynamic Programming
+    for i in range(6,N+1):
+        coin[i] = min(coin[i-2],coin[i-5]) + 1
+
+print(coin[N] if coin[N] < 100001 else -1)
 
 #2 (Overclock0708)
 
@@ -31,11 +37,11 @@ print(dp[N] if dp[N] < 5001 else -1)
 #     elif N < 0:
 #         count = -1
 #         break
-    
+
 #     if N % 5 == 0:
-#         count +=  N //5
+#         count +=  N // 5
 #         break
-#     N = N - 3
+#     N = N - 2
 #     count += 1
 
 # if count == -1 :

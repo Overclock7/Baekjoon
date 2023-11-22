@@ -2,14 +2,14 @@
 
 def BruteForce(text,pattern):
     
-    len_text = len(text)
-    len_pattern = len(pattern)
+    t_len = len(text)
+    p_len = len(pattern)
     
-    for i in range(len_text):
+    for i in range(t_len):
         j = 0
-        while j < len_pattern and text[i+j] == pattern[j]:
+        while j < p_len and text[i+j] == pattern[j]:
             j += 1
-        if j == len_pattern :
+        if j == p_len :
             return i
     return -1
 """------------------------------------------------------------"""
@@ -24,30 +24,30 @@ def Rehash(start,hash,text,len_hash):
     return rehash
 
 def KarpRobin(text,pattern):
-    len_text = len(text)
-    len_pattern = len(pattern)
-    hash_text = Hash(text,len_pattern)
-    hash_pattern = Hash(pattern,len_pattern)
+    t_len = len(text)
+    p_len = len(pattern)
+    hash_text = Hash(text,p_len)
+    hash_pattern = Hash(pattern,p_len)
     
-    for i in range((len_text - len_pattern) + 1):
+    for i in range((t_len - p_len) + 1):
         if hash_text == hash_pattern:
             j = 0
-            while j < len_pattern and text[i+j] == pattern[j]:
+            while j < p_len and text[i+j] == pattern[j]:
                 j += 1
-            if j == len_pattern :
+            if j == p_len :
                 return i
-        hash_text = Rehash(i,hash_text,text,len_pattern)
+        hash_text = Rehash(i,hash_text,text,p_len)
     return -1
 """------------------------------------------------------------"""
 def Border_KMP(pattern): # 강의 PPT와 다름
-    len_pattern = len(pattern)
-    border = list(0 for _ in range(len_pattern + 1))
+    p_len = len(pattern)
+    border = list(0 for _ in range(p_len + 1))
     border[0] = -1
     
     index = 1
     pointer = 0 # 반복되는 패턴의 끝을 가리킴
     
-    while index < len_pattern :
+    while index < p_len :
         if pattern[index - 1] == pattern[pointer]:
             pointer += 1
             border[index] = pointer
@@ -61,23 +61,23 @@ def Border_KMP(pattern): # 강의 PPT와 다름
     return border
 
 def KMP(text,pattern,border):
-    len_text = len(text)
-    len_pattern = len(pattern)
-    index_text = 0
-    index_pattern = 0
+    t_len = len(text)
+    p_len = len(pattern)
+    t_idx = 0
+    p_idx = 0
     
-    while index_text + index_pattern < len_text:
-        if pattern[index_pattern] == text[index_text + index_pattern]:
-            if index_pattern == len_pattern - 1:
-                return index_text
-            index_pattern += 1
+    while t_idx + p_idx < t_len:
+        if pattern[p_idx] == text[t_idx + p_idx]:
+            if p_idx == p_len - 1:
+                return t_idx
+            p_idx += 1
         else:
-            if border[index_pattern] > -1:
-                index_text = index_text + index_pattern - border[index_pattern] # 규칙
-                index_pattern = border[index_pattern]
-            else: # border[index_pattern] == -1 인 경우
-                index_text = index_text + 1 # 한 칸 이동
-                index_pattern = 0 # 패턴 첫번째로
+            if border[p_idx] > -1:
+                t_idx = t_idx + p_idx - border[p_idx] # 규칙
+                p_idx = border[p_idx]
+            else: # border[p_idx] == -1 인 경우
+                t_idx = t_idx + 1 # 한 칸 이동
+                p_idx = 0 # 패턴 첫번째로
 """------------------------------------------------------------"""
 
 text =  "abcdefgcaac"
