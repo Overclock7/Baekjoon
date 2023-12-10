@@ -9,7 +9,7 @@ dp = [0] * 200001
 
 mini = lst[0]
 for i in range(1,N):
-    mini = min(mini,lst[i])
+    mini = min(mini,lst[i]) # 가장 낮은 주가
     dp[i] = max(dp[i-1],lst[i]-mini)
-    
+
 print(max(dp))

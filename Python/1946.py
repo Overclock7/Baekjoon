@@ -14,7 +14,7 @@ for _ in range(T):
     result = 1 # 서류심사 1등은 무조건 선발
     top = R[1] # 1등의 면접심사 등수
     for i in range(2,N+1):
-        if R[i] < top:
+        if R[i] < top: # 현재 면접심사 등수보다 작으면 (인터뷰 능력이 좋은사람임.)
             top = R[i]
             result += 1
             

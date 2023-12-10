@@ -11,6 +11,7 @@ t[1] = 1
 t[2] = 2
 t[3] = 5
 
+#점화식을 잘 보자!
 for i in range(4,n+1):
     for j in range(i):
         t[i] += t[j]*t[i-j-1]

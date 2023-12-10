@@ -5,6 +5,7 @@ input = sys.stdin.readline
 
 dp = [[[1 for _ in range(21)] for _ in range(21)] for _ in range(21)]
 
+# 주어진 알고리즘에 의해서...
 for i in range(1,21):
     for j in range(1,21):
         for k in range(1,21):

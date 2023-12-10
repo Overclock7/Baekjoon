@@ -13,7 +13,6 @@ while bin(N).count('1') > K:
 
 print(result)
 
-
 # 2 (baekjoon)
 
 # import sys

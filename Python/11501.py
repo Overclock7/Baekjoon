@@ -10,7 +10,7 @@ for _ in range(T):
     
     max = 0
     result = 0
-    for stock in S[::-1]:
+    for stock in S[::-1]: # 뒤에서 부터 본다.
         if max < stock:
             max = stock
         else:

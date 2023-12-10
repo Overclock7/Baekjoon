@@ -14,7 +14,7 @@ B[0:2] = [0,1,1]
 for i in range(3,N+1):
     A[i] = A[i-1] + A[i-2]
     B[i] = B[i-1] + B[i-2]
-    
+
 print(A[N],B[N])
 
 #2 (Baekjoon)

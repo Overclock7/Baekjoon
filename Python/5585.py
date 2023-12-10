@@ -9,7 +9,7 @@ N = int(input())
 coin = 1000 - N
 
 result = 0
-for c in coin_lst:
+for c in coin_lst: # 500, 100 등 순으로 나누어줌
     result += coin // c
     coin = coin % c
     if coin == 0:

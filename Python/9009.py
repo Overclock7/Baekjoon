@@ -7,15 +7,15 @@ input = sys.stdin.readline
 fibo = [0] * 46
 fibo[0] = 0
 fibo[1] = 1
-for i in range(2,46):
-    fibo[i] = fibo[i-1] + fibo[i-2]
+for i in range(2,46): # fibo[46]은 10^9를 넘는 수임
+    fibo[i] = fibo[i-1] + fibo[i-2] 
 
 T = int(input())
 for _ in range(T):
     N = int(input())
     
     answer =[]
-    for i in range(45,0,-1):
+    for i in range(45,0,-1): # 큰 피보나치 수 부터 뺀다.
         if fibo[i] <= N:
             N -= fibo[i]
             answer.append(fibo[i])
